@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "myserdeadvanced"
+name = "myserdeannotations"
 version = "0.1.0"
 dependencies = [
  "serde 1.0.105 (registry+https://github.com/rust-lang/crates.io-index)",
