@@ -1,4 +1,4 @@
-use serde_derive::{Deserialize, Serialize};
+use serde::{Deserialize, Serialize};
 use serde_json;
 
 // You'll need the `Deserialize` trait on your struct so serde can deserialize it.

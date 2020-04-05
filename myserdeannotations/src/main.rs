@@ -1,4 +1,4 @@
-use serde_derive::{Deserialize, Serialize};
+use serde::{Deserialize, Serialize};
 use serde_json;
 
 // A smaller struct used as a map in JSON.
@@ -50,10 +50,9 @@ struct BiggerStruct {
     #[serde(skip)]
     internalvalue: i64,
 
-    // Let not serialize this field if it would be `null`.
+    // Let's not serialize this field if it would be `null`.
     #[serde(skip_serializing_if = "Option::is_none")]
     dontserialifnull: Option<i64>,
-
 }
 
 fn main() {
